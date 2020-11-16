@@ -8,7 +8,6 @@ var bodyParser = require('body-parser');
 
 
 app.use(cors());
-
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
@@ -25,7 +24,7 @@ app.get('/api/users/:qrcode',(request, response)=>{
     });
 });
 app.post('/api/users/save',(req , res)=>{
-    console.log(req.body);
+  console.log(req.body);
   var postData  = req.body;
   var data=postData.length;
 for(var i=0;i<data;i++)
