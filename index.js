@@ -5,7 +5,7 @@ const port = 3000;
 const pool = require('./data/config');
 
 var bodyParser = require('body-parser');
-
+require("./routes/home")(app);
 
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
